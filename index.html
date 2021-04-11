@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>ETCH-A-SKETCH</title>
+</head>
+<body>
+    <main class="main_field">
+
+        <h1 class="header">ETCH-A-SKETCH</h1>
+
+        <div class="control">
+            <select name="grid_size" id="grid_size">
+                <option value="2">2x2</option>
+                <option value="4">4x4</option>
+                <option value="8">8x8</option>
+                <option value="16" selected>16x16</option>
+                <option value="32">32x32</option>
+                <option value="64">64x64</option>
+            </select>
+            <input type="color">
+            <button id="random" class="random">Random</button>
+            <button id="darken" class="darken">Darken</button>
+            <button id="reset" class="clear">Clear</button>
+        </div>
+        <section id="container" class="container"></section>
+    </main>
+
+<script src="./app.js"></script>
+</body>
+</html>
